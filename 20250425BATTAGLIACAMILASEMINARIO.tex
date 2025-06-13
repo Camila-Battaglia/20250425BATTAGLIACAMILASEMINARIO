@@ -7,21 +7,19 @@
 \addbibresource{./files/gbTeXbib-20250425BATTAGLIACAMILASEMINARIO.bib}
 
 % glosarios
-\input{./files/gbTeXglo-seminarioUBA.tex}
+\input{}
 
-\ifPDF
+
 % separata de capítulos solo en pdf de pantalla
-\input{./files/gbTeXseparata-seminarioUBA.tex}
+\input{}
 % control de inconsistencias de principio y fin de linea
 \usepackage[hyphenation,homeoarchy,homeoarchywordcolor=orange, homeoarchycharcolor=orange,draft]{impnattypo}
 \usepackage[allcolors=magenta, colorlinks, unicode]{hyperref}
 \usepackage{easyReview}
 \usepackage{hyperxmp}
-\input{./files/gbTeXmeta-seminarioUBA.tex}
-\else
-\ifBNPDF
+\input{
 \usepackage[width=18truecm,height=25.5truecm,cam,center]{crop}
-\newcommand*\infofont[1]{\sf{\footnotesize #1 (alberto.alejandro.moyano@gmail.com)}}
+\newcommand*\infofont[1]{\sf{\footnotesize 
 \crop[font=infofont]
 \usepackage[hidelinks, unicode]{hyperref}
 \usepackage{hyperxmp}
@@ -42,76 +40,43 @@
 \date{}
 
 \begin{document}
+\frontmatter
 \justifying
 \maketitle
 
-\begin{quote}
-Gala Aznarez Carini
+\input{./artcap/inicio-frontmatter.tex}
 
-Emmanuel Biset
-
-Andrés Daín
-
-Roque Farrán
-
-Daniel Groisman
-
-Manuel Moyano
-
-Juan Manuel Reynares
-
-Aurora Romero
-
-Mercedes Vargas
-\end{quote}
+%\begin{quote}
+%Gala Aznarez Carini
+%
+%Emmanuel Biset
+%
+%Andrés Daín
+%
+%Roque Farrán
+%
+%Daniel Groisman
+%
+%Manuel Moyano
+%
+%Juan Manuel Reynares
+%
+%Aurora Romero
+%
+%Mercedes Vargas
+%\end{quote}
 
 \tableofcontents
 
-Presentación
-
-¿Por qué ontologías políticas?
-
-Ontología de la diferencia
-
-Emmanuel Biset
-
-Ontología de la sobredeterminación
-
-Andrés Daín
-
-Ontología genealógica
-
-Aurora Romero
-
-Ontología de la distorsión
-
-Juan Manuel Reynares
-
-Ontología de la inoperancia
-
-Manuel Moyano
-
-Ontología de la falta
-
-Gala Aznarez Carini - Mercedes Vargas
-
-Ontología del sujeto
-
-Daniel Groisman
-
-Ontología nodal
-
-Roque Farrán
-
-\chapter*{Presentación}
+\chapter{Presentación}
 
 Si muchas veces el trabajo intelectual parece darse en soledad, en el
 caso de este libro se trata de un pensar conjunto. A lo largo del tiempo
 hemos puesto en común nuestros trabajos individuales, los hemos sometido
 a discusión, hemos discrepado, compartido lecturas, y así, hemos tratado
 de escucharnos. De modo que este texto surge de un ejercicio colectivo
-de pensamiento nucleado en torno al "Programa de Estudios en Teoría
-Política" radicado en el Centro de Investigaciones y Estudios sobre la
+de pensamiento nucleado en torno al \enquote{Programa de Estudios en Teoría
+Política} radicado en el Centro de Investigaciones y Estudios sobre la
 Cultura y la Sociedad (CIECS) de la Universidad Nacional de Córdoba y el
 Consejo Nacional de Investigaciones Científicas y Técnicas.
 
@@ -120,7 +85,7 @@ plurales, que en su vacilación y fortaleza decidimos publicar para
 seguir dándole vueltas a preguntas, problemas, inquietudes, malestares y
 alegrías que nos convocan. La singularidad de cada texto no debe de
 dejar notar que los mismos están atravesados, de un lado, por una
-reflexión teórico-políticay, de otro lado, por el trabajo desde autores
+reflexión teórico-política y, de otro lado, por el trabajo desde autores
 que constituyen una constelación heredera de ciertas transformaciones
 surgidas del pensamiento francés de la década del `60. Autores como
 Althusser, Derrida, Foucault, Lacan, Rancière, Agamben, Nancy o Badiou
@@ -133,7 +98,7 @@ Publicamos para seguir la conversación infinita en la que estamos.
 
 1. La apuesta colectiva de este libro surge de un posicionamiento frente a
 los estudios contemporáneos sobre la política. Con la expresión
-"ontología política" planteamos un distanciamiento respecto al
+\enquote{ontología política} planteamos un distanciamiento respecto al
 privilegio del abordaje gnoseológico, puesto que la teoría política, la
 filosofía política o el pensamiento impolítico suponen un vínculo
 singular entre el saber y la política. Tratándose siempre de las
@@ -171,7 +136,7 @@ modo.
 La apuesta entonces es pasar del conocer al ser.
 
 2. La palabra ontología tal como lo indica su etimología nombra el
-"discurso sobre el ser", es decir, la relación entre el discurso, el
+\enquote{discurso sobre el ser}, es decir, la relación entre el discurso, el
 lenguaje o la razón con el ser en tanto que ser. Resulta central señalar
 que no nos referimos al ser en tanto que ser --el ser en sí mismo-- sino
 al o los \emph{discursos} sobre el ser. La cuestión es pensar de qué
@@ -181,7 +146,7 @@ pensamos aquí.
 Desde lo establecido en el apartado anterior es posible señalar que nos
 diferenciamos de dos perspectivas al respecto. En primer lugar, nos
 diferenciamos de una perspectiva que identifica pensamiento y ser, esto
-es, que parte de la "identidad" entre ambos. En segundo lugar, nos
+es, que parte de la \enquote{identidad} entre ambos. En segundo lugar, nos
 separamos de aquellas posiciones que la piensan como una relación de
 exterioridad, esto es, un discurso que se dirige al mundo (en su forma
 moderna implicaría el esquema de la representación donde el sujeto
@@ -248,7 +213,7 @@ incierto,la incertidumbre no es coyuntural sino su mismo exceso.
 
 Los discursos sobre el ser son el preguntar que abre lo dado más allá de
 lo dado: a su modo contingente de configuración. Esto implica pasar de
-la pregunta por el "qué" a la pregunta por el "cómo". Se trata de pensar
+la pregunta por el \enquote{qué} a la pregunta por el \enquote{cómo}. Se trata de pensar
 el cómo de la multiplicidad de lo dado sin remitir a algo más allá de
 ello. Se acentúa así el proceso de constitución de lo existente, lo que
 nos permite señalar que las condiciones de posibilidad son condiciones
@@ -312,7 +277,7 @@ Por estos motivos, más allá del esencialismo y del constructivismo,
 partimos de la ontología como indagación sobre la \emph{constitución} de
 lo dado.
 
-4. La utilización del calificativo "políticas" para referirnos a las
+4. La utilización del calificativo \enquote{políticas} para referirnos a las
 ontologías presentadas busca mantenerse en la indeterminación. Partimos
 no sólo de la variación histórica del concepto de política, sino de su
 contingencia, lo que significa que aun cuando fuera posible sistematizar
@@ -398,9 +363,9 @@ Groisman, Manuel Moyano, Juan Manuel Reynares, Aurora Romero, Mercedes
 Vargas.
 \end{quote}
 
-\chapter*{Ontología de la diferencia}
+\chapter{Ontología de la diferencia}
 
-\nombreautor{Emmanuel Biset}
+\author{Emmanuel Biset}
 
 \begin{quote}
 La diferencia entre Deleuze y Derrida como diferencia propia --y en
@@ -419,12 +384,12 @@ Jean-Luc Nancy
 
 Existen ciertos conceptos y no otros que marcan determinada época.
 Conceptos que al mismo tiempo que constituyen un índice del tiempo
-vivido intervienen en él. Uno de esos conceptos es el de "diferencia",
+vivido intervienen en él. Uno de esos conceptos es el de \enquote{diferencia},
 concepto que se ha constituido como un indicio central para pensar el
 mundo contemporáneo en, por lo menos, dos sentidos. De un lado, el
 término diferencia ha servido para designar toda una corriente del
-pensamiento contemporáneo: aquello que se ha denominado "filosofía de la
-diferencia". De otro lado, el término diferencia en un sentido político
+pensamiento contemporáneo: aquello que se ha denominado \enquote{filosofía de la
+diferencia}. De otro lado, el término diferencia en un sentido político
 viene a designar una época en la cual se han pluralizado las formas de
 vida y la alteridad se ha convertido en un problema ineludible. Un
 pensamiento de la diferencia en política parece remitir a la pluralidad
@@ -440,7 +405,7 @@ ontológico de la diferencia señalamos que no se trata de pensar la
 diferencia entre elementos de una realidad ya constituida, sino de la
 diferencia como constituyente de esa misma realidad. Este mismo problema
 surge en el plano de la significación. Si queremos precisar el
-significado de un término como "diferencia" lo reducimos al plano de un
+significado de un término como \enquote{diferencia} lo reducimos al plano de un
 signo entre otros, siendo que la diferencia menta el mismo proceso de
 significación. Por lo que el primer objetivo del texto es mostrar cómo
 se ha roto con aquellos planteos que hacen de la diferencia algo
@@ -473,7 +438,7 @@ de la diferencia\footnote{Ontología diferencial es el título de una
   de Beistegui, \emph{Truth and genesis.Philosophy as Differential
   Ontology,} Indiana University Press, Bloomington, 2004.}. Para ello,
 se dan argumentos en dos sentidos: se analiza el carácter
-"constituyente" de la diferencia a partir de la distinción entre lo
+\enquote{constituyente} de la diferencia a partir de la distinción entre lo
 óntico, lo ontológico y lo trascendental, y se propone, a distancia de
 ciertos planteos contemporáneos, la politicidad de la diferencia como
 procesos de temporalización y espaciamiento en tanto condiciones de
@@ -528,7 +493,7 @@ firme de Hegel. Éste, proscrito por los neokantianos, de repente se
 vuelve, curiosamente, un autor de vanguardia citado con respeto en los
 círculos más avanzados. Este renacimiento parece deberse a dos razones
 principales. Una es el nuevo período de interés hacia el marxismo, tras
-la revolución rusa. {[}\ldots{]} La otra razón es la influencia del
+la revolución rusa. (\dots) La otra razón es la influencia del
 curso pronunciado por Alexandre Kojève en la Escuela Práctica de Altos
 Estudios a partir de 1933 y que se prolongará hasta 1939\footnote{Vincent
   Descombes, \emph{Lo mismo y lo otro}, Cátedra, Madrid, 1998, p. 28.}.
@@ -546,12 +511,12 @@ el Hegel de Kojève el pensamiento es el movimiento de la razón hacia su
 otro, y por ello es una ampliación de la razón. Se trata de la
 \emph{negatividad} pensada en términos antropológicos, o mejor, de una
 antropología ontológica donde el hombre es el motor de la historia:
-"{[}\ldots{]} antropológico en el sentido que se trata ahí de
+\enquote{(\dots) antropológico en el sentido que se trata ahí de
 ``existencia'', es decir, de deseo y de \emph{acción}. Hegel no es
 simplemente un intelectualista: sin la creación por la acción negadora
-no hay contemplación de lo dado"\footnote{Alexander Kojève, \emph{La
+no hay contemplación de lo dado.} \footnote{Alexander Kojève, \emph{La
   dialéctica del amo y del esclavo en Hegel}, Fausto, Buenos Aires,
-  1996, p. 53.}. En esta perspectiva, la dialéctica expresa un
+  1996, p. 53.} En esta perspectiva, la dialéctica expresa un
 humanismo, esto es, la dialéctica es ontológicamente humanista porque
 todo lo que tiene sentido se decide en la historia humana entendida como
 acción transformadora del hombre.
@@ -564,22 +529,22 @@ Merleau-Ponty, Eric Weil. La dialéctica goza de un importante prestigio
 en la Francia posterior a 1930. Quizá el mayor indicio de esta
 relevancia se encuentra en \emph{La crítica de la razón dialéctica} de
 Jean Paul Sartre, publicada en 1960, y donde el marxismo como razón
-dialéctica constituye el "horizonte irrebasable" de nuestro tiempo:
-"Nuestro tiempo será, pues, \emph{crítico} porque tratará de determinar
+dialéctica constituye el \enquote{horizonte irrebasable} de nuestro tiempo:
+\enquote{Nuestro tiempo será, pues, \emph{crítico} porque tratará de determinar
 la validez y los límites de la Razón dialéctica, lo que supone indicar
 las oposiciones y los lazos de esta Razón con la Razón analítica y
-positivista"\footnote{Jean-Paul Sartre, \emph{Crítica de la razón
-  dialéctica}, Losada, Buenos Aires, 1995, p. 11.}.
+positivista.} \footnote{Jean-Paul Sartre, \emph{Crítica de la razón
+  dialéctica}, Losada, Buenos Aires, 1995, p. 11.}
 
 Frente a esta generación, ciertos autores que comienzan a escribir en
 las décadas del 50 y 60 se definen por su crítica a la dialéctica. Si
 bien existen diferencias de estilo, de acento, de interpretación, se
 comparte esta oposición al hegelianismo. Autores como Michel Foucault,
 Gilles Deleuze, Jacques Derrida, se caracterizan por la ruptura con
-Hegel. Señala Michel Foucault: "{[}\ldots{]} toda nuestra época, bien
+Hegel. Señala Michel Foucault: \enquote{(\dots) toda nuestra época, bien
 sea por la lógica o por la epistemología, bien sea por Marx o por
-Nietzsche, intenta escapar de Hegel"\footnote{Michel Foucault, \emph{El
-  orden del discurso,} Tusquets, Barcelona, 1973, p. 59.}. Esta ruptura
+Nietzsche, intenta escapar de Hegel.} \footnote{Michel Foucault, \emph{El
+  orden del discurso,} Tusquets, Barcelona, 1973, p. 59.} Esta ruptura
 con Hegel resulta central para pensar el contexto de emergencia del
 pensamiento de la diferencia. Pues vale recordar que la dialéctica
 hegeliana se construye como una lógica donde la alteridad tiene un lugar
@@ -601,8 +566,8 @@ diferencia de Martin Heidegger y el estructuralismo de Ferdinand de
 Saussure. En Heidegger aparece explícitamente la confrontación entre
 dialéctica y diferencia en un escrito central para la época:
 \emph{Identidad y diferencia}. Publicado en el año 1957, el texto se
-compone de dos conferencias: "El principio de identidad" y "La
-constitución onto-teo-lógica de la metafísica". Si la diferencia
+compone de dos conferencias: \enquote{El principio de identidad} y \enquote{La
+constitución onto-teo-lógica de la metafísica}. Si la diferencia
 ontológica es constitutiva del pensamiento heideggeriano, es su
 radicalización en una filosofía de la diferencia aquello que constituye
 un indicio central para el pensamiento francés de la década del 60. En
@@ -628,7 +593,7 @@ encontramos claramente la oposición entre pensamiento de la diferencia y
 filosofía dialéctica. Si esta oposición constituye el primer aspecto a
 destacar contextualmente, el segundo aspecto es la necesidad de pensar
 la diferencia en cuanto diferencia. Esto significa: pensar la diferencia
-en cuanto tal. Este "en cuanto tal" permite notar dos cosas respecto al
+en cuanto tal. Este \enquote{en cuanto tal} permite notar dos cosas respecto al
 tratamiento de la diferencia: primero, que con el término diferencia no
 se nombra la diferencia de cosas existentes en el mundo: la diferencia
 óntica; segundo, que tampoco el término diferencia se dirige a una
@@ -646,18 +611,18 @@ Heidegger señala que la cuestión es pensar la diferencia entre ente y
 ser. Esta diferencia no es posterior a dos realidades llamadas por caso
 ser y ente, sino que ser y ente aparecen a partir de la diferencia. Esto
 resulta central, pues la diferencia no es posterior, sino es la misma
-\emph{posibilidad} del ser y el ente, por lo que existe una "primacía
-ontológica" de la diferencia sobre el ser y el ente. No se puede
+\emph{posibilidad} del ser y el ente, por lo que existe una \enquote{primacía
+ontológica} de la diferencia sobre el ser y el ente. No se puede
 distinguir ser y ente como dos entes singulares, pues en tal caso se
 elimina la pregunta por la diferencia ontológica. Se trata de pensar en
 el ente mismo el ser, por lo que ser y ente no son algo distinto, son lo
-mismo, o mejor, es la diferencia en lo mismo: "Ser y ente son lo Mismo;
+mismo, o mejor, es la diferencia en lo mismo: \enquote{Ser y ente son lo Mismo;
 sólo en la diferenciación entre ser y ente está unido de propio lo Mismo
 (el ser del ente, el ente en su ser) en la unidad con él mismo. Ser no
 es algo distinto de lo ente; si fuera algo distinto sería, una vez más,
 ente, y la Diferencia ontológica quedaría invertida en mera Diferencia
-óntica"\footnote{Otto Poggeler, \emph{El camino del pensar de Martin
-  Heidegger},Alianza, Madrid, 1993, p. 176. Si ya tempranamente la
+óntica.} \footnote{Otto Poggeler, \emph{El camino del pensar de Martin
+  Heidegger,Alianza, Madrid, 1993, p. 176} Si ya tempranamente la
   cuestión de la diferencia ontológica resulta central, será su
   radicalización como pensamiento de la diferencia aquello que
   constituya un marco de referencia para la filosofía francesa.
@@ -665,13 +630,13 @@ ente, y la Diferencia ontológica quedaría invertida en mera Diferencia
   diferencia. Pensamiento de la diferencia en cuanto tal que se enfrenta
   a una dificultad constitutiva debido a que existen diversos términos
   en alemán que el autor utiliza para nombrarla. Cf. Caterina Resta,
-  \emph{La misura della differenza}, Milano, Guerini, 1988.}. Esta será
+  \emph{La misura della differenza}, Milano, Guerini, 1988.} Esta será
 la principal crítica a la tradición, convertir al ser en un ente más,
 incluso un ente supremo que fundaría el resto de los entes
 (onto-teo-logía). Pero si el ser se piensa como un ente entre otros,
 olvidamos la pregunta por la diferencia ontológica. De modo que el
 pensamiento de Heidegger resulta central porque, de un lado, aparece una
-"filosofía de la diferencia" en expresa confrontación con Hegel y, de
+\enquote{filosofía de la diferencia} en expresa confrontación con Hegel y, de
 otro lado, un pensamiento de la diferencia en cuanto tal lleva a la
 formulación de la diferencia ontológica, es decir, a mostrar el estatuto
 ontológico de la diferencia. En otros términos, la diferencia no es
@@ -681,16 +646,16 @@ hace posible al mundo como tal.
 El otro indicio ineludible del contexto es el
 estructuralismo\footnote{Francois Dosse en su historia intelectual del
   estructuralismo señala la relevancia para la década del 60 del cruce
-  entre el programa nietzscheano-heideggeriano y el estructuralismo: "La
+  entre el programa nietzscheano-heideggeriano y el estructuralismo: \enquote{La
   búsqueda heideggeriana del logos se une aquí con la genealogía
   nietzscheana, y ambas encontraron en el estructuralismo un magnifico
   destino. La crítica del etnocentrismo, del eurocentrismo, van a
   acentuarse en los años cincuenta y sesenta con la marea
   estructuralista, que va a retomar el paradigma crítico del
-  nietzscheao-heideggerismo". Francois Dosse, \emph{Historia del
+  nietzscheao-heideggerismo.} Francois Dosse, \emph{Historia del
   estructuralismo}, Akal, Madrid, 2004, p. 416.}. No se trata de una
 teoría entre otras, sino del marco teórico que hegemoniza la época. Una
-"aventura de la mirada" que pretende atravesar diversos campos
+\enquote{aventura de la mirada} que pretende atravesar diversos campos
 proponiendo una forma singular de indagar todo objeto. En el
 estructuralismo la noción de diferencia no es una más, sino que puede
 considerarse su núcleo duro. Como es sabido, Saussure inaugura la
@@ -726,14 +691,14 @@ línea de tiempo. Luego de establecer estos dos principios, es
 fundamental notar que el valor del signo surge de una relación
 diferencial. Esto significa que la lengua es un sistema donde todos los
 términos son solidarios y el valor de cada uno surge de la presencia
-simultánea de los otros: "En todos estos casos, pues, sorprendemos, en
+simultánea de los otros: \enquote{En todos estos casos, pues, sorprendemos, en
 lugar de \emph{ideas} dadas de antemano, valores que emanan del sistema.
 Cuando se dice que los valores corresponden a conceptos, se
 sobreentiende que son puramente diferenciales, definidos no
 positivamente por su contenido, sino negativamente por sus relaciones
 con los otros términos del sistema. Su más exacta característica es la
-de ser lo que los otros no son"\footnote{Ferdinand de Saussure,
-  \emph{Curso\ldots{}}, \emph{op. cit.}, p. 141.}. Por ello señala
+de ser lo que los otros no son.} \footnote{Ferdinand de Saussure,
+  \emph{Curso\ldots{}}, \emph{op. cit.}, p. 141.} Por ello señala
 Saussure que arbitrario y diferencial son dos cualidades correlativas
 que constituyen la lengua donde sólo hay diferencias sin términos
 positivos.
@@ -742,19 +707,19 @@ Siguiendo los señalamientos de Saussure, la diferencia será central en
 el estructuralismo puesto que no es un pensamiento de la relación entre
 signos ya constituidos, sino que el mismo valor o identidad del signo
 surge de la relación diferencial. En este sentido, la diferencia es
-"constitutiva" de los signos, pues un sistema diferencial precede y
+\enquote{constitutiva} de los signos, pues un sistema diferencial precede y
 posibilita la identidad de los elementos. Por esto, en el
 estructuralismo se vinculan de modo inherente génesis y estructura: la
 estructura como sistema de diferencias muestra la génesis diferencial de
 todo elemento. Partiendo de esta perspectiva, el estructuralismo excedió
 su primera formulación restringida al campo lingüístico, para
 constituirse en un modo de abordar diferentes objetos donde posibilidad
-de determinar la significación surgía de consideraciones formales: "Las
+de determinar la significación surgía de consideraciones formales: \enquote{Las
 investigaciones estructurales carecerían de interés si las estructuras
 no fueran traducibles a modelos cuyas propiedades formales son
 comparables, con independencia de los elementos que las
-componen"\footnote{Claude Lévi-Strauss, \emph{Antropología
-  estructural},Eudeba, Buenos Aires, 1977, p. 256.}. Un ordenamiento es
+componen.} \footnote{Claude Lévi-Strauss, \emph{Antropología
+  estructural},Eudeba, Buenos Aires, 1977, p. 256.} Un ordenamiento es
 estructurado si es un sistema con cohesión interna que se revela en el
 estudio de las transformaciones del mismo. Un modelo geométrico de la
 diferencia constituye el sentido mismo, es decir, un modelo espacial
@@ -780,7 +745,7 @@ previamente constituidos. La diferencia es ontológica en cuanto
 constituye los mismos elementos, esto es, la diferencia es
 \emph{genética}, sea en la precedencia respecto del ser y el ente en
 Heidegger, sea en la constitución del valor del signo en Saussure. Por
-esto, la pregunta es qué se entiende por "constitución" y cómo es
+esto, la pregunta es qué se entiende por \enquote{constitución} y cómo es
 posible vincular esto con la política. Para avanzar en este sentido, las
 referencias a Gilles Deleuze y Jacques Derrida resultan ineludibles.
 
@@ -797,7 +762,7 @@ de los 60. Una de las figuras centrales en el esbozo de un pensamiento
 de la diferencia es Gilles Deleuze. En cierto sentido la categoría de
 diferencia se identifica con toda la obra deleuzeana, de ahí la
 dificultad de precisar un sentido. Ya en su escrito temprano sobre David
-Hume, de 1953, aparece la idea de un "principio de diferencia". Cuando
+Hume, de 1953, aparece la idea de un \enquote{principio de diferencia}. Cuando
 se pregunta qué es lo dado para el empirismo, indica que se trata de un
 conjunto de percepciones --un movimiento--, sin una identidad previa. El
 empirismo parte de la experiencia como una sucesión móvil de
@@ -813,14 +778,14 @@ representación como un sujeto que ordena el caos del mundo objetivo.
 
 Si en el estudio del empirismo se puede ubicar el primer antecedente, la
 referencia a Friedrich Nietzsche en Deleuze es central por dos motivos:
-primero, porque será leyendo la noción de "voluntad de poder" que
+primero, porque será leyendo la noción de \enquote{voluntad de poder} que
 formula su noción de diferencia y, segundo, porque sirve para comprender
 de qué modo se trata de pensar a Nietzsche contra Hegel, donde aparece
 claramente un primer esbozo de la relación entre lo afirmativo y lo
 negativo. En este sentido, el uso de Nietzsche por autores como
 Foucault, Deleuze o Derrida estará signado por el abandono de la
 dialéctica\footnote{José Sazbón, \emph{Nietzsche en Francia}, UNQ,
-  Buenos Aires, 2009 y Edgardo Castro, "Los usos de Nietzsche", en
+  Buenos Aires, 2009 y Edgardo Castro, \enquote{Los usos de Nietzsche}, en
   \emph{Instantes y Azares. Escrituras Nietzscheanas}, año II, nº 2,
   Primavera de 2002, pp. 59-84.}. En la lectura de Nietzsche la
 diferencia aparece en relación a la noción de fuerza, pues todo objeto
@@ -829,21 +794,21 @@ otras. No será sino esa multiplicidad como relación diferencial de
 fuerzas lo que aparezca en el concepto de diferencia. Para Deleuze,
 desde el momento en que la fuerza está relacionada con otra fuerza se
 llama voluntad, por lo que la voluntad es el elemento diferencial de la
-fuerza: "Que cualquier fuerza se relaciona con otra, sea para obedecer
+fuerza: \enquote{Que cualquier fuerza se relaciona con otra, sea para obedecer
 sea para mandar, he aquí lo que nos encamina hacia el origen: el origen
 es la diferencia en el origen, la diferencia en el origen es
 \emph{jerarquía}, es decir la relación de una fuerza dominante con una
 fuerza dominada, de una voluntad obedecida con una voluntad
-obediente"\footnote{Gilles Deleuze, \emph{Nietzsche y la filosofía},
+obediente.} \footnote{Gilles Deleuze, \emph{Nietzsche y la filosofía},
   Anagrama, Barcelona, 1998, p. 16. Indudablemente si en la noción de
   voluntad de poder se encuentra la genealogía de la diferencia
-  deleuzeana, la repetición surge del eterno retorno: "{[}\ldots{]} el
+  deleuzeana, la repetición surge del eterno retorno: \enquote{(\dots) el
   eterno retorno se dice solamente del devenir, de lo múltiple. Es la
   ley de un mundo sin ser, sin unidad, sin identidad. Lejos de
   \emph{presuponer} lo Uno o lo Mismo, constituye la unidad exclusiva de
   lo múltiple en cuanto múltiple, la única identidad de lo que difiere:
-  el volver es el único ``ser'' del devenir". Gilles Deleuze,
-  "Conclusiones sobre la voluntad de poder y el eterno retorno", en
+  el volver es el único ``ser'' del devenir}. Gilles Deleuze,
+  \enquote{Conclusiones sobre la voluntad de poder y el eterno retorno}, en
   \emph{La isla desierta y otros textos}, Pre-Textos, Valencia, 2005, p.
   163.}.
 
@@ -852,14 +817,14 @@ diferencia tal como será elaborado en \emph{Diferencia y repetición},
 libro que puede ser caracterizado como un tratado sobre la diferencia.
 El pensamiento de la diferencia en Deleuze se caracteriza por su
 distancia respecto a la negatividad hegeliana, su ruptura con el primado
-de la identidad y la crítica a la representación: "Pues la diferencia no
+de la identidad y la crítica a la representación: \enquote{Pues la diferencia no
 implica lo negativo, y no admite ser llevada hasta la contradicción más
 que en la medida en que se continúe subordinándola a lo idéntico. El
 primado de la identidad, cualquiera sea la forma en que esta sea
-concebida, define el mundo de la representación"\footnote{Gilles
-  Deleuze, \emph{Diferencia\ldots, op cit.,} p. 15.}. Todo el esfuerzo
+concebida, define el mundo de la representación.} \footnote{Gilles
+  Deleuze, \emph{Diferencia\ldots, op cit.,} p. 15.} Todo el esfuerzo
 deleuzeano se encuentra en pensar una diferencia sin negación: una
-\emph{diferencia pura}. Esto implica que existen dos formas de
+\emph{diferencia pura} Esto implica que existen dos formas de
 comprender la diferencia, una dialéctica y una pura:
 
 \begin{quote}
@@ -867,7 +832,7 @@ La dialéctica hegeliana consiste en la reflexión sobre la diferencia,
 pero invierte la imagen. Sustituye la afirmación de la diferencia como
 tal por la negación de lo que difiere; la afirmación de sí mismo, por la
 negación del otro; la afirmación de la afirmación, por la famosa
-negación de la negación. {[}\ldots{]} Al ocupar la oposición el lugar de
+negación de la negación. (\dots) Al ocupar la oposición el lugar de
 la diferencia, se produce el triunfo de las fuerzas reactivas que hallan
 en la voluntad de la nada el principio que les corresponde\footnote{Gilles
   Deleuze, \emph{Nietzsche\ldots, op cit.,} p. 272.}.
@@ -887,12 +852,12 @@ la diferencia es la esencia de la afirmación. Afirmación que no es la
 afirmación de lo dado, la aceptación, imposibilidad de decir que no,
 sino afirmación como creación. Afirmación que, en última instancia, se
 duplica: es afirmación de la afirmación. Lo negativo resulta de la
-afirmación de la diferencia: "Lo negativo no está presente en la esencia
+afirmación de la diferencia: \enquote{Lo negativo no está presente en la esencia
 como aquello de donde la fuerza extrae su actividad: al contrario,
 resulta de esta actividad, de la existencia de una fuerza activa y de la
 afirmación de su diferencia. Lo negativo es un producto de la propia
 existencia: la agresividad necesariamente asociada a una existencia
-activa, la agresividad de una afirmación"\footnote{\emph{Ídem}, p. 17.}.
+activa, la agresividad de una afirmación.} \footnote{\emph{Ídem}, p. 17.}
 
 En la distancia con la dialéctica hay que pensar la distancia entre
 diferencia y oposición, pues la diferencia hegeliana se piensa como
@@ -949,7 +914,7 @@ representación\footnote{\emph{Ídem,} p. 58. La noción de "diferencia
   mantiene una relación positiva y directa con las cosas solamente en la
   medida en que pretende captar la cosa misma de lo que ella es, en su
   diferencia con respecto a todo lo demás, es decir, en su
-  \emph{diferencia interna}. {[}\ldots{]} Si existen diferencias de
+  \emph{diferencia interna}. (\dots) Si existen diferencias de
   naturaleza entre individuos de un mismo género, habremos de reconocer
   que, efectivamente, la diferencia no es simplemente espacio-temporal,
   ni tampoco genérica o específica y, en suma, que no es exterior ni
@@ -1074,7 +1039,7 @@ siempre en la simultaneidad. Esto es lo que se denomina
 unidad para formar un sistema. La multiplicidad no está subordinada a
 ningún principio exterior puesto que manifiesta la misma diferencia. Los
 elementos de la multiplicidad están determinados recíprocamente, por lo
-que no existe ninguna independencia. Esto implica "{[}\ldots{]} plantar
+que no existe ninguna independencia. Esto implica "(\dots) plantar
 la cuestión del ser del devenir en términos de disposición relativa de
 una pluralidad de elementos que no sólo se constituyen diferencialmente
 unos en relación a otros sino que, además, no constituyen el circuito de
@@ -1098,7 +1063,7 @@ entonces, es virtual. Esto no significa que sea posible o que carezca de
 realidad, sino que tiene un estatuto trascendental: la diferencia no es
 lo dado, sino aquello que configura lo dado. La multiplicidad en tanto
 diferenciante es la idea, así una relación múltiple ideal como relación
-diferencial se actualiza en relaciones espacio-temporales: "{[}\ldots{]}
+diferencial se actualiza en relaciones espacio-temporales: "(\dots)
 una multiplicidad interna, es decir, una sistema de relación múltiple no
 localizable entre elementos diferenciales que se encarna en relaciones
 reales y términos actuales"\footnote{Gilles Deleuze,
@@ -1154,7 +1119,7 @@ trascendental. Esto se comprende desde el juego de palabras con el
 término diferenciación: la diferencia es ese precursor que hace que lo
 diferente sea diferente. La diferencia se convierte, de este modo, en
 irreductiblemente múltiple y vinculada con otras diferencias:
-"{[}\ldots{]} la verdad de la realidad de aquello que es como
+"(\dots) la verdad de la realidad de aquello que es como
 diferenciado en un sentido triple: 1) porque se diferencia respecto de
 otros seres, 2) porque resulta diferenciado \emph{en} el ser, 3) porque
 es, en sí mismo, bien una diferencia, bien la integración de un cierto
@@ -1231,7 +1196,7 @@ unidades significativas. Por ello Derrida señala que la
 se busca reconstruir y contextualizar los diferentes usos textuales que
 se le ha dado al término, sino de referir a un sistema de economía
 general; por otro lado, la palabra haz refleja la idea de tejido, de un
-cruce de líneas de sentido: "{[}\ldots{]} los elementos del sistema no
+cruce de líneas de sentido: "(\dots) los elementos del sistema no
 tienen nada de atómico (en el sentido clásico, al menos), hay que decir
 que tales elementos no son otra cosa que haces de huellas. Estas huellas
 no son lo que cierta lingüística denomina rasgos distintivos, sino sólo
@@ -1303,7 +1268,7 @@ cierta cara de sí misma, la \emph{différance} no es ciertamente más que
 el \emph{despliegue} histórico y de época del ser o de la diferencia
 ontológica. La \emph{a}de la \emph{différance} señala el
 \emph{movimiento}de este despliegue"\footnote{\emph{Ídem}, p. 23. La
-  diferencia ontológica sería, así, derivada: "{[}\ldots{]} ente y ser,
+  diferencia ontológica sería, así, derivada: "(\dots) ente y ser,
   óntico y ontológico, ``óntico-ontológico'' serían, en
   un~estilo\emph{~}original,~\emph{derivados~}respecto de la diferencia;
   y en relación con lo que. más adelante denominaremos
@@ -1449,7 +1414,7 @@ en tanto distinción y retraso, sino que la diferencia también es
 \emph{polemos}. En este caso, es la diferencia como diferendo
 irreductible, como lucha de fuerzas. Aún más, lo que no ha podido ser
 pensado es esta conjunción en la diferencia de diferir y diferendo:
-"{[}\ldots{]} la palabra diferencia (con \emph{e}) nunca ha podido
+"(\dots) la palabra diferencia (con \emph{e}) nunca ha podido
 remitir así a diferir como temporización ni al desacuerdo como
 \emph{polemos}. Es esta pérdida de sentido lo que debería compensar
 --económicamente-- la palabra \emph{différance} (con
@@ -1655,7 +1620,7 @@ queremos atener a lo empírico, a una mera aceptación de lo existente, y
 tanto Deleuze como Derrida se oponen a esto, lo dado no es sino fruto de
 un proceso de diferenciación\footnote{En este sentido acentuamos el
   carácter trascendental del empirismo de Deleuze. Al respecto señala
-  Agamben: "{[}\ldots{]} con Deleuze lo trascendental se aparta
+  Agamben: "(\dots) con Deleuze lo trascendental se aparta
   decididamente de toda idea de conciencia para presentarse como una
   experiencia sin conciencia ni sujeto: un empirismo trascendental".
   Giorgio Agamben, "La inmanencia absoluta", en \emph{La potencia del
@@ -1716,7 +1681,7 @@ quisiéramos señalar cuál es a nuestro criterio la diferencia central
 entre sus planteos y aquello que queda por pensar allí\footnote{Quizá
   otra distancia surja de las formas de abordar la tradición, en la
   tensión entre una lectura crítica minuciosa de la tradición y una
-  apuesta a la creación de algo nuevo: "{[}\ldots{]} pues no se trata
+  apuesta a la creación de algo nuevo: "(\dots) pues no se trata
   solamente de apuntar, a causa de la indecisión, a la detención de las
   proposiciones del discurso metafísico, sino sobre todo a la invención
   de un discurso diferente que fluye y abre en otro lugar otras formas
@@ -1776,7 +1741,7 @@ equívoco\footnote{Nancy señala que la distancia podría encontrarse entre
   que se dice de las diferencias, en el segundo caso, el ser nunca puede
   decirse como tal puesto que siempre difiere, no se hace presente. Si
   en un caso el sentido se produce en la diferencia, en el otro el
-  sentido se vuelve imposible: "{[}\ldots{]} por un lado, el sentido se
+  sentido se vuelve imposible: "(\dots) por un lado, el sentido se
   apoya en la autoridad de la diferenciación, por el otro, el sentido se
   anula en ella. Uno hace caer todo el peso sobre el sentido como
   movimiento, como producción, como novedad, como devenir, el otro hace
@@ -1929,7 +1894,7 @@ seguros de un suelo, de una morada y de una historia"\footnote{Jean-Luc
 
 \chapter{Ontología de la sobredeterminación}
 
-\nombreautor{Andrés Daín}
+\author{Andrés Daín}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2078,7 +2043,7 @@ identidades y diferencias, siendo éstas la contraparte de
 aquéllas"\footnote{\emph{Ídem}, p. 230.}. Así, podemos sintetizar el
 orden de la lingüística estructural en torno a dos principios
 fundamentales: el primero indica que "\emph{en la lengua no hay más que
-diferencias} {[}\ldots{]} pero en la lengua \emph{sólo hay diferencias
+diferencias} (\dots) pero en la lengua \emph{sólo hay diferencias
 sin términos positivos}"\footnote{\emph{Ídem}, p. 247.}, lo que revela
 el carácter puramente relacional y diferencial de las identidades
 lingüísticas, mostrando por un lado que "la lengua no puede ser otra
@@ -2091,7 +2056,7 @@ combinaciones y sustituciones con los otros elementos, poniéndose en
 evidencia el carácter formal del leguaje.
 
 \hypertarget{el-retiro-del-fundamento}{%
-\subsection{El retiro del fundamento}\label{el-retiro-del-fundamento}}
+\section{El retiro del fundamento}\label{el-retiro-del-fundamento}}
 
 Los \emph{Cursos} de Saussure no tardaron en generar un fuerte impacto
 en el mundo intelectual, alcanzando un importante nivel de influencia en
@@ -2194,7 +2159,7 @@ otro lugar}. El centro no es el centro"\footnote{\emph{Ibíd.}}. Por lo
 tanto, el deseo del centro en la constitución de la estructura apela a
 una presencia central imposible porque desde siempre dicha presencia "ha
 estado deportada fuera de sí en su sustituto {[}pero éste{]}
-{[}\ldots{]} no sustituye a nada que de alguna manera le haya
+(\dots) no sustituye a nada que de alguna manera le haya
 pre-existido"\footnote{\emph{Ídem}, p. 385}. Así, como está tanto dentro
 como fuera, el centro de la estructura ha recibido tanto los nombres de
 origen o de fin, pero todos sus movimientos y reemplazos quedaron
@@ -2235,12 +2200,12 @@ naturaleza del campo excluye la totalización. En palabras de nuestro
 autor:
 
 \begin{quote}
-{[}\ldots{]} este campo es, en efecto, el de un juego, es decir, de
+(\dots) este campo es, en efecto, el de un juego, es decir, de
 sustituciones infinitas en la clausura de un conjunto finito. Este campo
 tan sólo permite tales sustituciones infinitas porque es finito, es
 decir, porque en lugar de ser un campo inagotable, como en la hipótesis
 clásica, en lugar de ser demasiado grande, le falta algo, a saber, un
-centro que detenga y funde el juego de las sustituciones {[}\ldots{]}.
+centro que detenga y funde el juego de las sustituciones (\dots).
 Ese movimiento del juego, permitido por la falta, por la ausencia de
 centro o de origen, es el movimiento de la \emph{suplementariedad}. No
 se puede determinar el centro y agotar la totalización puesto que el
@@ -2249,7 +2214,7 @@ en su ausencia, ese signo se añade, viene por añadidura, como
 \emph{suplemento}. El movimiento de la significación añade algo, es lo
 que hace que haya siempre ``más'', pero esa adición es flotante porque
 viene a ejercer una función vicaria, a suplir una falta por el lado del
-significado. {[}\ldots{]} La \emph{sobreabundancia} del significante, su
+significado. (\dots) La \emph{sobreabundancia} del significante, su
 carácter \emph{suplementario}, depende, pues, de una finitud, es decir,
 de una falta que debe ser \emph{suplida}\footnote{Jacques Derrida,
   \emph{op. cit}., pp. 397-398.}.
@@ -2310,7 +2275,7 @@ Quizás sea ésta la diferencia cardinal entre el
 \emph{anti}fundacionalismo.
 
 \hypertarget{discurso-hegemonuxeda-y-el-retorno-de-lo-poluxedtico}{%
-\subsection{Discurso, hegemonía y el retorno de lo
+\section{Discurso, hegemonía y el retorno de lo
 político}\label{discurso-hegemonuxeda-y-el-retorno-de-lo-poluxedtico}}
 
 A partir de esta irrupción del lenguaje en las ciencias sociales, fue
@@ -2469,7 +2434,7 @@ no se piensa, simplemente no existen?\footnote{Al respecto es
   discursos que lacanianamente las hablen. La lucha de clases se
   convierte en un deplorable malentendido. No hay razones valederas que
   la justifiquen: ¡todo se reduce a un simple problema de comunicación!
-  {[}\ldots{]} El mundo exterior y objetivo se constituye a partir de su
+  (\dots) El mundo exterior y objetivo se constituye a partir de su
   transformación en objeto de un discurso lógico que le infunde su soplo
   vital y que, de paso, devora y disuelve la conflictividad de lo real.
   La explotación capitalista ya no es resultado de la ley del valor y de
@@ -2636,7 +2601,7 @@ política, es cómo un elemento dentro del sistema asume ese rol de
 a partir del cual toma sentido toda la cadena de significación.
 
 \hypertarget{significaciuxf3n-y-hegemonuxeda}{%
-\subsection{Significación y hegemonía}\label{significaciuxf3n-y-hegemonuxeda}}
+\section{Significación y hegemonía}\label{significaciuxf3n-y-hegemonuxeda}}
 
 En el modo en que lo hemos expuesto, las diferentes aproximaciones a los
 procesos de significación conforman una trayectoria signada por la
@@ -2735,7 +2700,7 @@ elementos cuando la identidad de estos depende ``absolutamente'' de las
 relaciones que éstos puedan establecer?
 
 \hypertarget{sobredeterminaciuxf3n}{%
-\subsection{Sobredeterminación}\label{sobredeterminaciuxf3n}}
+\section{Sobredeterminación}\label{sobredeterminaciuxf3n}}
 
 Estos interrogantes nos sitúan sin escalas en el objetivo principal de
 este artículo. Estos interrogantes nos exigen avanzar hacia una nueva
@@ -2933,7 +2898,7 @@ En este contexto debe nuestra propuesta de una ontología de la
 sobredeterminación.
 
 \hypertarget{protagonismo-louis-althusser}{%
-\subsection{Protagonismo: Louis Althusser}\label{protagonismo-louis-althusser}}
+\section{Protagonismo: Louis Althusser}\label{protagonismo-louis-althusser}}
 
 Louis Althusser, a partir de sus lecturas del psicoanálisis freudiano y
 lacaniano\footnote{Cf. Louis Althusser, \emph{La revolución teórica de
@@ -2996,7 +2961,7 @@ que puedan fusionarse en una unidad de ruptura y siendo, a su vez, cada
 circunstancia tomada por separado la fusión de una acumulación de
 contradicciones.
 
-De otro modo sino "¿{[}c{]}ómo es posible {[}\ldots{]} que las masas
+De otro modo sino "¿{[}c{]}ómo es posible (\dots) que las masas
 populares, divididas en clases (proletarios, campesinos, pequeños
 burgueses) puedan, consciente o confusamente, lanzarse al asalto general
 del régimen existente?"\footnote{\emph{Ídem}, p. 80.}. La respuesta no
@@ -3220,7 +3185,7 @@ complejo. La estructura no es algo \emph{exterior} que vendría a
 modificar el aspecto, la forma y la relación de los objetos: "\emph{La
 ausencia de la causa en la ``causalidad metonímica'' de la estructura
 sobre sus efectos no es el resultado de la exterioridad de la estructura
-en relación a los fenómenos} {[}\ldots{]}; \emph{es al contrario, la
+en relación a los fenómenos} (\dots); \emph{es al contrario, la
 forma misma de la interioridad de la estructura como estructura, en sus
 efectos}"\footnote{\emph{Ídem}, p. 204.}.
 
@@ -3256,7 +3221,7 @@ el otro, permita aproximarse a los proceso de creación de sentido más en
 términos de contaminación, hibridización e implicancia mutua.
 
 \hypertarget{hacia-una-ontologuxeda-de-la-sobredeterminaciuxf3n}{%
-\subsection{Hacia una Ontología de la Sobredeterminación}\label{hacia-una-ontologuxeda-de-la-sobredeterminaciuxf3n}}
+\section{Hacia una Ontología de la Sobredeterminación}\label{hacia-una-ontologuxeda-de-la-sobredeterminaciuxf3n}}
 
 Como hemos procurado poner de relieve, una ontología de la
 sobredeterminación está orientada a pensar las relaciones entre objetos
@@ -3689,7 +3654,7 @@ recorrer la genealogía de nuestras identidades, para poder pensarlas en
 su propia precariedad histórica. Pero además, ¿quiénes somos? nos lleva,
 hacia adelante a una conversión ética de nosotros mismos, a la
 autoinvención política de nuevas subjetividades. "La historicidad de
-nuestro ser {[}\ldots{]} no conduce a un relativismo de valores y a un
+nuestro ser (\dots) no conduce a un relativismo de valores y a un
 nihilismo de la acción, sino a la provocación de nuestras libertades,
 desafiadas por la invención de nuevas modalidades de ser"\footnote{Frédéric
   Gros, \emph{Michel Foucault}, Amorrortu Ediciones, Buenos Aires, 2007,
@@ -3753,7 +3718,7 @@ esencialmente por función la desujeción en el juego de lo que se podría
 denominar, con una palabra, la política de la verdad"\footnote{\emph{Ídem},
   p. 8.}. De este modo, la posibilidad de desujeción se halla dentro de
 la racionalización, sin que por esto haya que asumir que la "fuente para
-la resistencia {[}\ldots{]} esté alojada en el sujeto o conservada de
+la resistencia (\dots) esté alojada en el sujeto o conservada de
 una manera fundacional"\footnote{Judith Butler, \emph{op, cit}., p. 10.}.
 
 A partir del diagnóstico de nuestra actualidad, la pregunta por la
@@ -3834,7 +3799,7 @@ busca unificarse, allí donde el Yo se inventa una identidad"\footnote{Michel
   Foucault, \emph{Nietzsche, la genealogía \ldots, op. cit}., p. 26.}.
 Lejos de ser una categoría del orden de la semejanza, el análisis
 genealógico como procedencia busca "conservar lo que ha sucedido en su
-propia dispersión, {[}\ldots{]} descubrir que en la raíz de los que
+propia dispersión, (\dots) descubrir que en la raíz de los que
 conocemos y de lo que somos no hay ni ser ni la verdad, sino la
 exterioridad del accidente"\footnote{\emph{Ídem}, pp. 27-28.}. La
 peligrosa herencia trasmitida a través de la procedencia, no es una
@@ -3983,7 +3948,7 @@ de una humanización, se atraviesa el cuerpo a través de un reticulado
 disciplinario. La genealogía del alma moderna busca hacer visible el
 desarrollo de una sucesión de sujeciones y resistencias. A través del
 trabajo genealógico se buscará exponer "cómo funcionan las cosas en el
-nivel de la sujeción presente, {[}\ldots{]} que someten nuestros
+nivel de la sujeción presente, (\dots) que someten nuestros
 cuerpos, gobiernan nuestros gestos y dictan nuestras conductas, esos
 procesos que nos constituyen como sujetos"\footnote{Esther Díaz,
   \emph{op. cit}., p 104.} Un análisis de la \emph{Herkunft} que nos
@@ -4030,7 +3995,7 @@ sujetándonos.
 
 \begin{quote}
 Cuando se define el ejercicio del poder como un modo de acción sobre las
-acciones de los otros {[}\ldots{]} se incluye un elemento muy
+acciones de los otros (\dots) se incluye un elemento muy
 importante: la libertad. El poder sólo se ejerce sobre sujetos libres, y
 sólo en tanto ellos sean libres
 
@@ -4259,7 +4224,7 @@ dimensión ontológica del pensamiento foucaultiano en cuanto
 
 \begin{quote}
 Pensar es plegar, es doblar el afuera en un adentro coextensivo a él.
-{[}\ldots{]} Si el adentro se constituye por el plegamiento del afuera,
+(\dots) Si el adentro se constituye por el plegamiento del afuera,
 existe una relación topológica entre los dos: la relación con sí mismo
 es homóloga de la relación con el afuera, y las dos están en contacto
 por medio de los estratos, que son los medios relativamente exteriores
@@ -4657,10 +4622,10 @@ asentado en causas naturales, de fuerza, o de saber. Si así fuera, el
 orden determinado por un fundamento a priori no precisaría de ninguna
 explicación. De esta forma, las relaciones de desigualdad social entran
 en tensión continua con la presupuesta relación igualitaria en la
-dimensión del lenguaje, como nos dice Rancière, "{[}\ldots{]} esta
+dimensión del lenguaje, como nos dice Rancière, "(\dots) esta
 igualdad es simplemente la igualdad de cualquiera con cualquiera,
-{[}\ldots{]} la pura contingencia de todo orden social {[}\ldots{]} para
-obedecer una orden {[}\ldots{]} hay que comprenderla y hay que
+(\dots) la pura contingencia de todo orden social (\dots) para
+obedecer una orden (\dots) hay que comprenderla y hay que
 comprender que hay que obedecerla. Y para hacer eso, ya es preciso ser
 igual a quien nos manda. Es esta igualdad la que carcome todo orden
 natural"\footnote{Jacques Rancière, \emph{El desacuerdo. Política y
@@ -4722,7 +4687,7 @@ igual capacidad de las inteligencias. Completamos con este pasaje
 central en la argumentación rancièrana: "\ldots{} lo que se trata de
 explicar, lo que pone en marcha la máquina explicativa, es la
 desigualdad, la ausencia de razón que tiene necesidad de ser
-racionalizada, la facticidad que requiere ser ordenada {[}\ldots{]} ese
+racionalizada, la facticidad que requiere ser ordenada (\dots) ese
 arbitrario de la lengua que un sujeto razonable traspasa a otro sujeto
 razonable supone este otro arbitrario que es el arbitrario
 social"\footnote{Jacques Rancière, "La Comunidad de iguales", en
@@ -4774,13 +4739,13 @@ básica en la configuración de las relaciones sociales. En este sentido
 se refiere Rancière cuando nos dice que
 
 \begin{quote}
-{[}\ldots{]} no hay fuerza que se imponga sin tener que legitimarse, es
+(\dots) no hay fuerza que se imponga sin tener que legitimarse, es
 decir, sin tener que reconocer una igualdad irreductible para que la
 desigualdad pueda funcionar. Desde el momento en que la obediencia debe
 pasar por un principio de legitimidad; desde el momento en que tiene que
 haber \emph{leyes que se impongan como leyes}, e instituciones que
 encarnen lo común de la comunidad, el mandato debe suponer una igualdad
-entre el que manda y el que es mandado {[}\ldots{]} \emph{la sociedad
+entre el que manda y el que es mandado (\dots) \emph{la sociedad
 desigualitaria no puede funcionar sino gracias a una multitud de
 relaciones igualitarias}\ldots{}\footnote{Jacques Rancière, \emph{El
   odio a la democracia}, Editorial Amorrortu, Buenos Aires, 2007, pp. 72
@@ -5195,7 +5160,7 @@ excesivo énfasis en la lógica política, está presente en la lectura
 dicotómica de la que pretendemos alejarnos aquí. Dice Žižek:
 
 \begin{quote}
-{[}\ldots{]} cuando Rancière o Badiou menosprecian la política como una
+(\dots) cuando Rancière o Badiou menosprecian la política como una
 policía que se limita a cuidar el aceitado \emph{service des biens},
 omiten considerar el hecho de que el orden social no puede reproducirse
 si se limita a los términos del \emph{service des biens}: debe haber Uno
@@ -5462,7 +5427,7 @@ erección de la lucha política concreta en verdad irrefutable, universal
 por sí misma. Así, en las palabras del autor,
 
 \begin{quote}
-{[}\ldots{]} toda política actúa también en el borde de su riesgo
+(\dots) toda política actúa también en el borde de su riesgo
 radical que es la \emph{incorporación policial}, la realización del
 sujeto como cuerpo social. La acción política se sostiene siempre en el
 intervalo, entre la figura natural, la figura policial de la
@@ -5554,7 +5519,7 @@ igualitarios, a desplazamientos contingentes.
 
 Manuel Moyano
 
-{[}\ldots{]} el problema del ser está universalmente referido al
+(\dots) el problema del ser está universalmente referido al
 constituyente y a lo constituido
 
 Carta de Heidegger a Husserl del 22 de Octubre de 1927
@@ -5629,7 +5594,7 @@ rescatar para dar cuenta de una ontología de la inoperancia.\footnote{Este
   autor, la articulación entre diferentes términos o discursos se
   realiza de la siguiente forma: "cada discurso {[}o término{]} (como un
   hilo) pasará en algún punto por encima de otro de manera alternada
-  {[}\ldots{]} pero luego ese \emph{otro} pasará por encima del primero,
+  (\dots) pero luego ese \emph{otro} pasará por encima del primero,
   y así también sucederá en relación a un tercero y a un cuarto (como en
   un trenzado infinito). Por lo tanto no hay metalenguaje, como no hay
   discurso \emph{determinante en última instancia} de la inteligibilidad
@@ -5773,7 +5738,7 @@ políticamente signada por el doble movimiento de la diferencia política,
 ya que, como afirma Marchart,
 
 \begin{quote}
-{[}\ldots{]} por un lado, lo político, en tanto momento instituyente de
+(\dots) por un lado, lo político, en tanto momento instituyente de
 la sociedad, opera como fundamento suplementario para la dimensión
 infundable de la sociedad; pero, por el otro, este fundamento
 suplementario se retira en el ``momento'' mismo en que instituye lo
@@ -5810,7 +5775,7 @@ indistinción"\footnote{Giorgio Agamben,\emph{Homo sacer\ldots,op. cit.}
 A su vez, hay todavía una asunción más fuerte que la anterior, ya que la
 incluye: la ontología \emph{es} política. Esto se debe para Marchart a
 que si lo ontológico refiere al abismo que supone el ser en general, a
-la falta de fundamento último,{[}\ldots{]} únicamente \emph{lo político}
+la falta de fundamento último,(\dots) únicamente \emph{lo político}
 puede intervenir como suplemento del fundamento ausente. Y ello implica
 que cualquier ontología (posfundacional) --cualquier
 \emph{hauntologie}-- será necesariamente una ontología \emph{política},
@@ -5867,7 +5832,7 @@ que Marchart presenta la diferencia política. Así, "de un lado, tenemos
 la imposibilidad de un fundamento último, y por ende un fundamento
 negativo; de otro lado, tenemos los fundamentos contingentes de lo
 social"\footnote{\emph{Ídem.} p. 179.}. En este sentido, "lo político
-{[}\ldots{]} sólo aparece como negatividad de las fundaciones
+(\dots) sólo aparece como negatividad de las fundaciones
 parciales"\footnote{\emph{Ibíd.}}. Por lo tanto, lo que la diferencia
 política en el pensamiento de Marchart trae a colación no es sólo la
 imposibilidad de un fundamento último, sino también la imposibilidad de
@@ -5917,7 +5882,7 @@ ser.\footnote{De este modo se comprende la preeminencia del
   único ente que se caracteriza por comprender el ser. De modo que el
   Dasein comprendiendo su ser comprende el ser en general, es la
   transición en sí mismo de lo óntico a lo ontológico, porque es
-  ónticamente lo ontológicamente diferente. {[}\ldots{]} la cuestión del
+  ónticamente lo ontológicamente diferente. (\dots) la cuestión del
   ser es el mismo Dasein''.\emph{Ídem.} p. 186. En otras palabras, la
   posibilidad del ser --de su sentido, es decir, de sus modos de ser-
   viene dada por la existencia de un ente que puede realizar la
@@ -5977,7 +5942,7 @@ Si, como habíamos dicho, asumir que la imposibilidad de un fundamento
 decidir que ese movimiento es el juego entre lo político y la política,
 
 \begin{quote}
-{[}\ldots{]} esto conlleva un argumento circular. Desde una decisión se
+(\dots) esto conlleva un argumento circular. Desde una decisión se
 nombra a la diferencia política, pero política es justamente esa
 decisión primera. Esto conlleva a un desplazamiento metonímico de la
 primera decisión al llamarla política. En otros términos, ¿por qué
@@ -6107,7 +6072,7 @@ estructura lógica?
 Con respecto a ello, Agamben nos dice
 
 \begin{quote}
-{[}\ldots{]} la excepción es una especie de la exclusión. Es un caso
+(\dots) la excepción es una especie de la exclusión. Es un caso
 individual que es excluido de la norma general. Pero lo que caracteriza
 propiamente a la excepción es que lo excluido no queda por ello
 absolutamente privado de conexión con la norma; por el contrario, se
@@ -6232,7 +6197,7 @@ sujeto decisorio sustancial, sino más bien que tanto la decisión como su
 sujeto (el soberano) sobreviven en la pura forma de su darse
 insustancial, donde el soberano se constituye como tal suponiendo su
 identidad en el acto de la decisión que le otorga dicha identidad. De
-este modo, como advierte Galindo Hervás,"{[}\ldots{]} es detectable una
+este modo, como advierte Galindo Hervás,"(\dots) es detectable una
 dialéctica entre voluntad y sujeto que arruina la pretendida estabilidad
 de ambos: la voluntad de decisión sobre la forma de la propia existencia
 (que determina la existencia de la unidad política) presupone ya dicha
@@ -6270,10 +6235,10 @@ Michel Foucault situaba lo que para él era indispensable analizar allí.
 Así, decía contra el marxismo de la época --exaltante del Estado--
 
 \begin{quote}
-{[}\ldots{]} lo importante para nuestra modernidad, es decir, para
+(\dots) lo importante para nuestra modernidad, es decir, para
 nuestra actualidad, no es entonces la estatización de la sociedad sino
 más bien lo que yo llamaría ``gubernamentalización'' del Estado.
-{[}\ldots{]} Gubernamentalización del Estado que es un fenómeno
+(\dots) Gubernamentalización del Estado que es un fenómeno
 particularmente retorcido porque, si bien los problemas de la
 gubernamentalidad y las técnicas de gobierno se convirtieron
 efectivamente en la única apuesta política y el único espacio real de
@@ -6311,7 +6276,7 @@ multiplicarla, asegurarla en sexualidades, educaciones, es decir, en
 vida es el objeto del poder. Ahora bien, si se enlazan estos análisis
 descentrados con las analíticas centradas propias de la soberanía como
 hace Agamben, se puede afirmar, en palabras de Galindo Hervás, que
-"{[}\ldots{]} él {[}Agamben{]} pretende investigar conjuntamente los
+"(\dots) él {[}Agamben{]} pretende investigar conjuntamente los
 procedimientos totalizantes de los Estados modernos (\emph{técnicas
 políticas} de tutela de la vida) y las técnicas de individualización
 objetivas (\emph{tecnologías del yo} foucaultianas), ya que considera
@@ -6369,7 +6334,7 @@ hombres que debe ser politizado: la nuda vida. Respecto de ello, dice
 Galindo Hervás,
 
 \begin{quote}
-{[}\ldots{]} para el italiano, que en esto sigue a Benjamin, lo
+(\dots) para el italiano, que en esto sigue a Benjamin, lo
 característico de la política moderna y de la soberanía propia del
 Estado no es tanto que incluyan la \emph{zoé} en la \emph{polis}, cuanto
 que en ellos (y por ellos) la nuda vida, originariamente al margen de lo
@@ -6414,10 +6379,10 @@ al ser el presupuesto por el cual puede referirse a ella, le es externo
 también: excluida e incluida a la vez, tal es el espacio de la nuda
 vida. Por lo tanto, la correspondencia estructural entre nuda vida y
 soberano otorga la matriz comprensiva de la biopolítica estatal:
-"{[}\ldots{]} el Estado {[}el soberano{]} no existe fuera de los cuerpos
+"(\dots) el Estado {[}el soberano{]} no existe fuera de los cuerpos
 de los individuos que lo componen {[}nuda vida{]}, de ahí que la
 política asuma como objeto la protección y reproducción de la vida de
-esos cuerpos {[}\ldots{]} los mecanismos de dominio se tornan inmanentes
+esos cuerpos (\dots) los mecanismos de dominio se tornan inmanentes
 al campo social, difusos en el cuerpo y en los cerebros de cada
 individuo, intensificándose por ello la eficacia de los aparatos
 normalizantes. \emph{El Estado alcanza con ello una simultánea
@@ -6527,10 +6492,10 @@ enceguece en su ignota y resplandeciente luz: la gloria.\footnote{Cf.
   \emph{Ídem.} p. 323.} Dice Agamben:
 
 \begin{quote}
-{[}\ldots{]} la gloria es el lugar en que la teología trata de pensar la
+(\dots) la gloria es el lugar en que la teología trata de pensar la
 inaccesible conciliación entre trinidad inmanente y trinidad económica,
 \emph{theología} y \emph{oikonomía}, ser y praxis, Dios en sí y Dios
-para nosotros. {[}\ldots{]} \emph{La economía glorifica al ser, como el
+para nosotros. (\dots) \emph{La economía glorifica al ser, como el
 ser glorifica la economía}. Y sólo en el espejo de la gloria ambas
 trinidades parecen reflejarse la una en la otra; sólo en su esplendor
 parecen coincidir por un instante el ser y la economía, el Reino y el
@@ -7012,7 +6977,7 @@ emergencia, se evidencia a modo de \emph{tropiezo}, corte, con su
 aspecto de \emph{falla} y fisura, como aquello que no encaja en el orden
 del discurso. En la discontinuidad, en la vacilación del discurso es en
 donde el inconsciente se aparece como fenómeno, es allí que "una cosa
-distinta exige su \emph{realización} {[}\ldots{]}. Lo que se produce en
+distinta exige su \emph{realización} (\dots). Lo que se produce en
 esta hiancia, en el sentido pleno del término \emph{producirse}, se
 presenta como \emph{el hallazgo.} Así es como la exploración freudiana
 encuentra primero lo que sucede en el inconsciente"\footnote{\emph{Idem,}
@@ -7072,7 +7037,7 @@ pero que, por otro lado, implica su división\emph{.} Se trataría de una
 operación que implica la desaparición de una porción-del-ser a cambio
 del sentido, sentido por el cual el sujeto se instituye como tal. En sus
 propios términos, Lacan define a la \emph{alienación} como "ese
-\emph{vel} que condena {[}\ldots{]} al sujeto a sólo aparecer en esa
+\emph{vel} que condena (\dots) al sujeto a sólo aparecer en esa
 división que he articulado lo suficiente, según creo, al decir que
 \emph{si aparece de un lado como sentido producido por el significante,
 del otro aparece como afanisis {[}desaparecido{]}}"\footnote{\emph{Ídem,}
@@ -7414,11 +7379,11 @@ se pone en juego una vertiente de goce pulsional inherente que resulta
 indispensable tener en cuenta para su lectura; es aquí donde el
 pensamiento del psicoanálisis resulta central para el pensamiento
 político contemporáneo. Stavrakakis, en relación a esto, afirma:
-"{[}\ldots{]} la teoría lacaniana, además de sus importantes
-contribuciones epistemológicas {[}\ldots{]} proporciona una serie de
+"(\dots) la teoría lacaniana, además de sus importantes
+contribuciones epistemológicas (\dots) proporciona una serie de
 herramientas invaluables para el análisis de la realidad política y
-social {[}\ldots{]} también introduce un nuevo modo de teorizar el
-momento de \emph{lo político {[}\ldots{]} como un encuentro con lo
+social (\dots) también introduce un nuevo modo de teorizar el
+momento de \emph{lo político (\dots) como un encuentro con lo
 real}"\footnote{\emph{Ídem,} p. 37 (las cursivas son nuestras).}\emph{.}
 
 Si toda experiencia social y subjetiva se encuentra atravesada por una
@@ -7458,7 +7423,7 @@ reflexiones en torno a lo político en el pensamiento contemporáneo, es
 decir, pensar la dimensión política como aquella lógica que emerge de
 esta imposibilidad, de la lógica del no-todo del inconsciente. Se puede
 decir, siguiendo a Alemán, que "el inconsciente es una experiencia
-política. Es una experiencia política porque {[}\ldots{]} no hay ningún
+política. Es una experiencia política porque (\dots) no hay ningún
 significante que agote la representación del sujeto"\footnote{Jorge
   Alemán, \emph{El porvenir del inconsciente. Filosofía/Política/Época
   del psicoanálisis,} Grama, 2006, p. 171.}. En este sentido podemos
@@ -7467,7 +7432,7 @@ cuenta la dislocación, la dimensión de la falta, funciona en
 convergencia, y de manera homologable, a la lógica del inconsciente. En
 términos de Laclau, la dislocación es el punto en el que"la lógica del
 inconsciente, como lógica del significante, se muestra como una lógica
-esencialmente política {[}\ldots{]} y en que lo social, irreductible en
+esencialmente política (\dots) y en que lo social, irreductible en
 última instancia al status de una presencia plena, se revela también
 como político. Lo político adquiere así el status de una ontología de lo
 social"\footnote{Ernesto Laclau, \emph{Nuevas reflexiones sobre la
@@ -7489,7 +7454,7 @@ imaginaria que el sujeto mantiene con los objetos del mundo. El fantasma
 es la relación del sujeto del significante, el sujeto barrado \$, de la
 falta en ser, y el llamado a un complemento del ser. En términos de
 Miller, el fantasma "reúne un término propiamente simbólico, \$, y otro
-imaginario, \emph{a}, {[}\ldots{]} que compensa, repara, la pérdida
+imaginario, \emph{a}, (\dots) que compensa, repara, la pérdida
 indicada por la barra del \$"\footnote{Jacques Alain Miller, \emph{Los
   signos del goce,} Paidós, Buenos Aires, 1998, p. 286.}.
 
@@ -7508,9 +7473,9 @@ real\footnote{Yannis Stavrakakis, \emph{"Lacan y\ldots", op. cit.}}.
 
 En continuidad, Žižek reflexiona estos conceptos para pensar los
 procesos sociales e ideológicos, definiendo a la \emph{fantasía}
-como:"{[}\ldots{]} un escenario imaginario cuya función es proveer una
+como:"(\dots) un escenario imaginario cuya función es proveer una
 suerte de apoyo positivo que llene el vacío constitutivo del sujeto. Y
-lo mismo es válido, {[}\ldots{]} para la \emph{fantasía social}:ella es
+lo mismo es válido, (\dots) para la \emph{fantasía social}:ella es
 la contrapartida necesaria del concepto de antagonismo, un escenario que
 llena los vacíos de la estructura social, ocultando su antagonismo
 constitutivo con la plenitud del goce"\footnote{Slavoj Žižek, \emph{El
@@ -7519,7 +7484,7 @@ constitutivo con la plenitud del goce"\footnote{Slavoj Žižek, \emph{El
 
 Žižek introduce el concepto de \emph{fantasía ideológica} que puede ser
 definida como una ilusión inconsciente que estructura la realidad, es
-decir, "el nivel fundamental de la ideología {[}\ldots{]} no es el de
+decir, "el nivel fundamental de la ideología (\dots) no es el de
 una ilusión que enmascare el estado real de las cosas, sino el de una
 fantasía (inconsciente) que estructura nuestra propia realidad
 social"\footnote{\emph{Ídem,} pp. 46-7.}. La ilusión no está del lado
@@ -7594,7 +7559,7 @@ afinidad teórica entre las positivizaciones de lo real a través del
 \emph{objeto petit a} y lo que Laclau trabaja cuando define a los
 \emph{significantes vacíos} como modos de positivizar los límites de la
 significación. Es decir, "cualquier término que se convierta en el
-significante de la falta en un contexto político {[}\ldots{]}. La
+significante de la falta en un contexto político (\dots). La
 política es posible porque la imposibilidad constitutiva de la sociedad
 sólo puede representarse mediante la producción de significantes
 vacíos"\footnote{Ernesto Laclau, \emph{Emancipación y Diferencia,}
@@ -7855,7 +7820,7 @@ atravesar la fantasía del orden social totalizado, sin fisura, y a
 partir de allí instituir la falta como causa ausente que a su vez
 presenta una potencialidad productiva. La posibilidad de invención que
 abre a \emph{lo político} ocurre al captar que la falta es una cuestión
-estructural productiva, es decir:"{[}\ldots{]} se trata de asumir la
+estructural productiva, es decir:"(\dots) se trata de asumir la
 necesidad estructural de la falta en el Otro más allá de la contingencia
 de los significantes puestos en juego, para poder hacer algo, para
 movilizar una perspectiva que se sustente de manera ineludible en un
@@ -7881,7 +7846,7 @@ constitutivo; "el punto de excepción/exclusión intrínseco, lo
 universalidad"\footnote{Slavoj Žižek, \emph{El espinoso sujeto,} Paidós,
   Buenos Aires, 2001, p. 244.}. Alemán, trabajando la potencialidad de
 ciertas nociones freudianas expresa que "allí donde los mandatos
-{[}\ldots{]} ordenan gozar con la pulsión de muerte, el deseo del pueblo
+(\dots) ordenan gozar con la pulsión de muerte, el deseo del pueblo
 debe advenir"\footnote{Jorge Alemán, \emph{"Lacan y\ldots", op. cit.,}
   p. 76.}.
 
@@ -8300,7 +8265,7 @@ pero la lengua queda intacta. Este es el énfasis saussureano. El despojo
 de lo empírico genera la posibilidad de establecer leyes universales.
 
 Dejando intacta la idea de que el individuo no es amo del sistema de la
-lengua −"lo que cambia en la lengua, lo que los hombres pueden cambiar,
+lengua "lo que cambia en la lengua, lo que los hombres pueden cambiar,
 son las designaciones, que se multiplican, que se remplazan y que
 siempre son conscientes, pero jamás el sistema fundamental de la
 lengua"\footnote{Émile Benveniste, \emph{Problemas de lingüística
@@ -8798,7 +8763,7 @@ doxa contemporánea.
 
 \chapter{Ontología nodal}
 
-\autor{Roque Farrán}
+\author{Roque Farrán}
 
 \section{Un materialismo del encuentro}
 
@@ -9451,7 +9416,7 @@ cimentar los elementos de la ideología".\footnote{Louis Althusser citado
 circunscribir la diferencia entre materialismo e idealismo filosóficos,
 en su compleja e irresoluble tensión interna, a partir de una
 distribución topológica de las distintas prácticas (teóricas y no
-teóricas): "{[}\ldots{]} podemos ya inferir no sólo que la tendencia
+teóricas): "(\dots) podemos ya inferir no sólo que la tendencia
 materialista se encuentra en una relación desigual y asimétrica con el
 idealismo, sino también que, debido a esta desproporción, la definición
 impura de las prácticas teóricas y su \emph{relación de exclusión
@@ -10804,3 +10769,5 @@ políticas durante el primer peronismo desde una mirada "desde abajo".
 Sus trabajos intentan incorporar el psicoanálisis lacaniano al análisis
 político para pensar los procesos de subjetivación política. Mail:
 \href{mailto:mer_chan86@hotmail.com}{\nolinkurl{mer\_chan86@hotmail.com}}
+
+\end{document}
